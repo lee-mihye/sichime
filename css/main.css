@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+/* main.css - 메인페이지 CSS */
+
+/*파일 merging(합치기)*/
+@import url(reset.css);
+@import url(core.css);
+
+
+
+/* common.css - 공통 레이아웃 디자인 */
+body {
+    overflow: auto;
+    background: rgb(51, 51, 51);
+}
+
+.wrap_box {
+    margin: 0 auto;
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.wrap {
+    background-color: #f1f2f3;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/******************************************헤더영역*****************************************/
+
+/*헤더영역*/
+.header {
+    width: 100vw;
+    max-width: 420px;
+    position: fixed;
+    z-index: 999;
+}
+
+
+.fixed {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* 뒤로가기 화살표 */
+.back {
+    padding: 7px 12px 7px 7px;
+}
+
+.header_txt {
+    color: #555;
+    font-size: 16px;
+    letter-spacing: -.8px;
+    font-weight: 600;
+    display: contents;
+}
+
+
+/* view 이미지, 숫자 */
+.view {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding-left: 20px;
+    color: #999;
+    font-size: 13px;
+    line-height: 29px;
+    letter-spacing: -.65px;
+    background: url(../images/view.svg) no-repeat;
+    background-position: 0 50%;
+    background-size: 20px;
+    max-width: 60px;
+}
+
+
+
+/******************************************컨텐츠영역*****************************************/
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    padding-top: 50px;
+}
+
+/*  카톡공유, 주소복사 */
+.share {
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+/* 상단 코멘트 갯수 버튼 */
+.share .comment {
+    background-image: url(../images/comment.svg);
+    background-repeat: no-repeat;
+    background-position: 8px 60%;
+}
+
+.share .comment.btn {
+    padding-left: 25px;
+}
+
+/* 버튼공용 */
+.share .btn {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #1c79bc;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -.65px;
+    border-radius: 3px;
+}
+
+
+
+/* 게시글 시작 */
+.article {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 0 0 1px;
+    margin-top: 10px;
+}
+
+/* 게시글 이미지 */
+.article img {
+    display: block;
+    width: 100%;
+}
+
+/* cont_8 체크아이콘 이미지 */
+body .check_img {
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.check_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+}
+
+/* cont_12 음식이미지 */
+
+
+.cont12_means {
+    margin: 5%;
+    width: 90%;
+}
+
+.cont12_means_1 {
+    float: left;
+    width: 48%;
+}
+
+.cont12_means_2 {
+    float: right;
+    width: 48%;
+}
+
+
+
+
+
+
+/* 게시글 텍스트 */
+.article h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    color: rgb(46, 44, 44);
+}
+
+.article p,
+.check_txt {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.check_txt {
+    margin: 0 auto;
+    width: 190px;
+}
+
+.check_box {
+    padding-bottom: 5px;
+}
+
+.check_box span {
+    font-weight: bold;
+}
+
+.strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.article_12 h2 {
+    font-size: 30px;
+    margin: 40px 0 20px 0;
+
+}
+
+body .article_13 h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.food_txt {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+/* table */
+table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 20px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.tabel_2 {
+    margin-top: 20px;
+}
+
+th {
+    font-weight: bold;
+    color: #000;
+}
+
+th,
+td {
+    border: 1px solid #000;
+}
+
+th:nth-child(1) {
+    width: 140px;
+}
+
+
+
+/* 안먹은걸로 구매하기 버튼 */
+.link {
+    width: 250px;
+    height: 50px;
+    background-color: #ffce30;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.link a {
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    display: block;
+}
+
+
+/******************************************리뷰영역*****************************************/
+/*  카톡공유, 주소복사 */
+.review_title{
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.review {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+body .review_pinfo{
+    border-bottom: 1px solid #ddd;
+    padding-bottom:5px;
+    background-color: #fff;
+    font-size: 14px;
+}
+.review_info{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    background-color: #fff;
+    font-size: 14px;
+} 
+.review_info li{
+    font-size: 14px;
+}
+.review_img img{
+    width: 100%;
+}
+.review p{
+    font-size: 14px; 
+}
+
+
+
+
+/*****************************************TOP버튼*****************************************/
+  /*위로이동버튼*/
+  .tbtn_wrap{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 360px;
+    max-width: 420px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .tbtn{
+    position: absolute;
+    bottom: calc(76px);
+    right: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    background-color: #fff;
+  }
+     
+  
+  .tbtn > img {
+    width: 16px;
+    height: 16px;
+    
+}
