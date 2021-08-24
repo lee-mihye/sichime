@@ -50,8 +50,9 @@ body {
 }
 
 /* 뒤로가기 화살표 */
-.back {
+.home {
     padding: 0px 7px 0px 15px;
+    width: 19px;
 }
 
 .header_txt {
