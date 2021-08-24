@@ -78,12 +78,12 @@
 
 */
 *{
-    font-family: "Noto Sans KR", "맑은 고딕", "Arial", "Gulim";
+    font-family: "NotoSan", "맑은 고딕", "Arial", "Gulim";
     font-size: 15px;
     color: #555555;
     letter-spacing: -0.7px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
 }
 

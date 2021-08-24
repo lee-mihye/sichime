@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded",
         console.log("로딩완료!자바스크립트");
 
 
-        //////////주소복사 스크립트//////////////
+        //////////주소복사 스크립트 상단//////////////
         function copyToClipboard(val) {
             var t = document.createElement("textarea");
             document.body.appendChild(t);
@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded",
         }
 
         $('#url_copy').click(function () {
-            copyToClipboard('https://www.naver.com/');
+            copyToClipboard('https://sichime.com/');
 
             toastr.options = {
                 "preventDuplicates": true,
@@ -26,7 +26,31 @@ window.addEventListener("DOMContentLoaded",
                 "positionClass": "toast-top-center"
             }
             toastr.success("주소가 복사되었습니다");
-        }); //////////주소복사 스크립트//////////////
+        }); //////////주소복사 스크립트 상단//////////////
+
+
+
+        //////////주소복사 스크립트 하단//////////////
+        function copyToClipboard(val) {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = val;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+        }
+
+        $('#url_copy_2').click(function () {
+            copyToClipboard('https://sichime.com/');
+
+            toastr.options = {
+                "preventDuplicates": true,
+                "closeButton": false,
+                "timeOut": 2000,
+                "positionClass": "toast-top-center"
+            }
+            toastr.success("주소가 복사되었습니다");
+        }); //////////주소복사 스크립트 하단//////////////
 
 
 

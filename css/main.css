@@ -51,7 +51,7 @@ body {
 
 /* 뒤로가기 화살표 */
 .back {
-    padding: 7px 12px 7px 7px;
+    padding: 0px 7px 0px 15px;
 }
 
 .header_txt {
@@ -67,7 +67,7 @@ body {
 .view {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 17px;
     padding-left: 20px;
     color: #999;
     font-size: 13px;
@@ -97,11 +97,15 @@ body {
     padding: 10px 15px;
 }
 
+.share_2 {
+    height: 30px;
+}
+
 /* 상단 코멘트 갯수 버튼 */
 .share .comment {
     background-image: url(../images/comment.svg);
     background-repeat: no-repeat;
-    background-position: 8px 60%;
+    background-position: 8px 55%;
 }
 
 .share .comment.btn {
@@ -131,6 +135,15 @@ body {
     margin-top: 10px;
 }
 
+/* article 영역 끝 간격 */
+.article>div {
+    margin-bottom: 70px;
+}
+
+.article>div:last-child {
+    margin-bottom: 0;
+}
+
 /* 게시글 이미지 */
 .article img {
     display: block;
@@ -139,22 +152,15 @@ body {
 
 /* cont_8 체크아이콘 이미지 */
 body .check_img {
-    width: 15px;
-    height: 15px;
-    padding-right: 5px;
+    width: 25px;
+    height: 25px;
+    padding-right: 8px;
     vertical-align: middle;
 }
 
-.check_box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 300px;
-}
+
 
 /* cont_12 음식이미지 */
-
-
 .cont12_means {
     margin: 5%;
     width: 90%;
@@ -184,26 +190,33 @@ body .check_img {
     color: rgb(46, 44, 44);
 }
 
-.article p,
-.check_txt {
+.article p {
     padding: 10px 15px;
     text-align: center;
 }
 
 .check_txt {
-    margin: 0 auto;
-    width: 190px;
+    margin: 10px auto;
+    width: 232px;
 }
 
 .check_box {
-    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
 }
 
 .check_box span {
     font-weight: bold;
+    font-size: 18px;
 }
 
-.strong {
+
+.fz_20 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.fz_18 {
     font-weight: bold;
     font-size: 18px;
 }
@@ -228,38 +241,81 @@ body .article_13 h2 {
 
 
 /* table */
-table {
-    border: 2px solid #000;
-    border-collapse: collapse;
+.table_border {
     width: 90%;
-    margin: 0 20px;
-    text-align: center;
+    border-radius: 10px;
     margin: 0 auto;
+    /* 세번째줄 색상 */
+    background-color: rgb(236, 236, 236);
+}
 
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    text-align: center;
+}
+
+/* 제목줄 */
+th {
+    font-weight: bold;
+    color: #000;
+    background-color: #ffce30;
+    height: 40px;
+}
+
+.tabel_2 th {
+    background-color: #f835c1;
+    color: #fff;
+}
+
+
+/* 쿠폰가격 진하게 */
+td:last-child{
+    font-weight: bold;
+    color: #000;
+    position: relative;
+}
+
+
+
+/* th 테두리 둥글게 설정 */
+th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+th,
+td {
+    border: 1px solid #fff;
+}
+
+
+tr {
+    height: 32px;
+}
+
+.tr_border {
+    background-color: rgb(250, 245, 250);
 }
 
 .tabel_2 {
     margin-top: 20px;
 }
 
-th {
-    font-weight: bold;
-    color: #000;
-}
 
-th,
-td {
-    border: 1px solid #000;
-}
 
-th:nth-child(1) {
-    width: 140px;
-}
+
 
 
 
 /* 안먹은걸로 구매하기 버튼 */
 .link {
+    position: relative;
     width: 250px;
     height: 50px;
     background-color: #ffce30;
@@ -274,49 +330,81 @@ th:nth-child(1) {
     display: block;
 }
 
+.link img {
+    position: absolute;
+    top: 25px;
+    right: -5px;
+    width: 25px;
+}
+
 
 /******************************************리뷰영역*****************************************/
-/*  카톡공유, 주소복사 */
-.review_title{
-    background-color: #eee;
+.review_title {
+    background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     padding: 10px 15px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-.review {
-    background-color: #fff;
-    padding: 10px 15px;
-}
-body .review_pinfo{
+.review_wrap {
     border-bottom: 1px solid #ddd;
-    padding-bottom:5px;
     background-color: #fff;
-    font-size: 14px;
+    padding: 15px 15px 35px;
 }
-.review_info{
+
+.review_wrap.last{
+    border: 0;
+}
+
+/* 리뷰 프로필영역(작성자,상품정보)*/
+.profile {
     display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    background-color: #fff;
-    font-size: 14px;
-} 
-.review_info li{
-    font-size: 14px;
+    padding-bottom: 10px;
 }
-.review_img img{
+
+.profile img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.profile ul li {
+    font-weight: 500;
+}
+
+/* 리뷰 이미지 영역 */
+.review_img img {
     width: 100%;
 }
-.review p{
-    font-size: 14px; 
+
+/* 리뷰 텍스트 영역 */
+.review_wrap p {
+    font-weight: 400;
 }
 
+/* 리뷰 더보기 */
+.reviwr_more{
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+.reviwr_more a{
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+}
+.reviwr_more img{
+    width: 20px;
+    padding-left: 5px;
+  
+}
 
 
 
 /*****************************************TOP버튼*****************************************/
-  /*위로이동버튼*/
-  .tbtn_wrap{
+/*위로이동버튼*/
+.tbtn_wrap {
     position: fixed;
     bottom: 0px;
     left: 50%;
@@ -327,9 +415,9 @@ body .review_pinfo{
     box-sizing: border-box;
     z-index: 9999;
     cursor: pointer;
-  }
+}
 
-  .tbtn{
+.tbtn {
     position: absolute;
     bottom: calc(76px);
     right: 16px;
@@ -345,11 +433,42 @@ body .review_pinfo{
     justify-content: center;
     box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
     background-color: #fff;
-  }
-     
-  
-  .tbtn > img {
+}
+
+
+.tbtn>img {
     width: 16px;
     height: 16px;
-    
+
+}
+
+
+/*****************************************푸터*****************************************/
+footer {
+    background-color: #eee;
+}
+
+footer img {
+    display: block;
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.foot_info{
+ padding: 0 10px 10px 10px;
+ text-align: center;
+}
+.foot_info li{
+    font-size: 12px;
+    line-height: 0;
+    display: inline;
+}
+.foot_info .space{
+    padding-right: 8px;
+}
+
+address{
+    font-style: normal;
 }

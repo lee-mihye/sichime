@@ -1,4 +1,6 @@
-/// GNB메뉴 링크 연결 JS - linksys.js ///
+/// 버튼 클릭하면 원하는 위치로 이동 JS - linksys.js ///
+
+
 
 $(function () { /////// jQB ///////////////////////
     console.log("로딩완료!");
@@ -6,11 +8,11 @@ $(function () { /////// jQB ///////////////////////
     //////// 상단 코멘트 클릭시 하단 리뷰로 이동/////////
     $(".comment").click(function (e) {
         e.preventDefault();
-        var offset = $(".review_title").offset();
+        var offset = $("#url_copy_2").offset();
 
         $("html,body").animate({
             scrollTop: offset.top
-        }, 600);
+        }, 400);
     }); ////////comment click/////////////////
 
 
@@ -26,7 +28,7 @@ $(function () { /////// jQB ///////////////////////
 	// 2. 버튼 클릭하면 원하는 위치로 이동
 	$('.tbtn').click(function (event) {
 		event.preventDefault();
-		$('html, body').animate({ scrollTop: 0 }, 300);
+		$('html, body').animate({ scrollTop: 0 }, 400);
 	});
 
 

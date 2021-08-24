@@ -110,6 +110,7 @@ button.toast-close-button {
   position: fixed;
   z-index: 999999;
   pointer-events: none;
+  top: 70%;
   /*overrides*/
 }
 
