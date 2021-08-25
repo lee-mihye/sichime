@@ -127,7 +127,7 @@ body {
 
 
 
-/* 게시글 시작 */
+/************************************** 게시글 시작 **************************************/
 .article {
     background-color: #ffffff;
     border-color: #dddddd;
@@ -160,19 +160,18 @@ body .check_img {
 }
 
 
-
-/* cont_12 음식이미지 */
-.cont12_means {
+/* article_14 안먹은걸로 하는법 음식이미지 */
+.means {
     margin: 5%;
     width: 90%;
 }
 
-.cont12_means_1 {
+.means_1 {
     float: left;
     width: 48%;
 }
 
-.cont12_means_2 {
+.means_2 {
     float: right;
     width: 48%;
 }
@@ -188,7 +187,7 @@ body .check_img {
     font-weight: bold;
     text-align: center;
     padding: 10px 15px;
-    color: rgb(46, 44, 44);
+    color: #2e2c2c;
 }
 
 .article p {
@@ -216,19 +215,23 @@ body .check_img {
 .fz_20 {
     font-weight: bold;
     font-size: 20px;
+    line-height: 25px;
+    color: #2e2c2c;
 }
 .fz_18 {
     font-weight: bold;
     font-size: 18px;
+    color: #2e2c2c;
+    display: inline-block;
 }
 
-.article_12 h2 {
+.article_13 h2 {
     font-size: 30px;
     margin: 40px 0 20px 0;
 
 }
 
-body .article_13 h2 {
+body .article_14 h2 {
     font-size: 25px;
     margin-top: 20px;
 }
@@ -239,6 +242,7 @@ body .article_13 h2 {
     text-align: center;
     padding-bottom: 5px;
 }
+
 
 
 /* table */
@@ -444,32 +448,3 @@ tr {
 }
 
 
-/*****************************************푸터*****************************************/
-footer {
-    background-color: #eee;
-}
-
-footer img {
-    display: block;
-    width: 50px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 15px 0;
-}
-
-.foot_info{
- padding: 0 10px 10px 10px;
- text-align: center;
-}
-.foot_info li{
-    font-size: 12px;
-    line-height: 0;
-    display: inline;
-}
-.foot_info .space{
-    padding-right: 8px;
-}
-
-address{
-    font-style: normal;
-}
